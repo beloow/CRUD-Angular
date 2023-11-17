@@ -1,0 +1,22 @@
+.myCard {
+    border: solid 1px #cccccc8e;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 10px!important;
+    align-items: center!important;
+    padding: 10px!important;
+    background-color: rgba(240, 255, 255, 0.073);
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.myCard:hover {
+    transform: scale(1.02);
+    background-color: rgba(0, 0, 255, 0.087)
+}
+

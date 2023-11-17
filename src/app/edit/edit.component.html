@@ -1,0 +1,35 @@
+<section class="container">
+    <h1 class="text-center text-mutedmb-2 mt-2"></h1>
+
+    <div class="row">
+        <div class="col-md-4 mx-auto d-flex justify-content-center">
+            <img [src]="pokemonSelected.picture" alt="" width="150">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <div class="mt-2">
+                <label for="">Nom</label>
+                <input type="text" class="form-control" placeholder="Nom" [(ngModel)]="pokemonSelected.name">
+            </div>
+            <div class="mt-2">
+                <label for="">Cp</label>
+                <input type="number" class="form-control" placeholder="Cp" [(ngModel)]="pokemonSelected.cp">
+            </div>
+            <div class="mt-2">
+                <label for="">Hp</label>
+                <input type="number" class="form-control" placeholder="Hp" [(ngModel)]="pokemonSelected.hp">
+            </div>
+            <div class="mt-2">
+                <label for="">Illustration</label>
+                <input type="text" class="form-control" placeholder="Illustration" [(ngModel)]="pokemonSelected.picture">
+            </div>
+            <div class="mt-2">
+                <button class="btn btn-success mt-2 btn-block w-100" (click)="updatePokemon()">Valider</button>
+            </div>
+
+        </div>
+    </div>
+
+
+</section>
